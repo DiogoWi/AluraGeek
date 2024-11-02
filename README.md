@@ -18,3 +18,7 @@ Essas operações são executadas de forma assíncrona, permitindo uma experiên
 - **HTML/CSS**: Interface simples para interação com a API (opcional).
 - **JavaScript**: Implementação das funções assíncronas.
 - **json-server**: Servidor mock para criação de uma API REST simulada, ideal para desenvolvimento e testes.
+
+---
+👉 Projeto [AluraGeek](https://github.com/DiogoWi/AluraGeek)
+### Feito por [Diogo Willian](https://github.com/DiogoWi)
