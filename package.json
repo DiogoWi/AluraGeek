@@ -1,0 +1,15 @@
+{
+  "name": "10---praticando-front-end---challenge-alurageek",
+  "version": "1.0.0",
+  "description": "projeto challenge alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "10---praticando-front-end---challenge-alurageek": "file:",
+    "json-server": "^1.0.0-beta.3"
+  }
+}

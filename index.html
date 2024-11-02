@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/mostrarProduto.js" defer></script>
+    <script type="module" src="js/buscarProduto.js" defer></script>
+    <script type="module" src="js/criarProduto.js" defer></script>
+    <script type="module" src="js/deletarProduto.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="logo do alura geek">
+    </header>
+
+    <main>
+        <section id="produto">
+            <h1>MEUS PRODUTOS:</h1>
+            <input type="text" placeholder="pesquisa" id="pesquisa">
+            <div id="cards"></div>
+        </section>
+
+        <section id="formulario">
+            <h1>ADICIONAR PRODUTO:</h1>
+            
+            <form>
+                <input type="text" placeholder="Nome do produto" required>
+                <input type="number" step=".01" placeholder="Preço (Exemplo: 1990.50)" required>
+                <input type="url" placeholder="Link da imagem" required>
+                <div id="botoes">
+                    <button id="guardar">Guardar</button>
+                    <button id="limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagens/logo.png" alt="logo do alura geek">
+        <p>DESENVOLVIDO POR DIOGO WILLIAN <span>ALURA LATAM - 2024</span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500;600;700&family=Press+Start+2P&display=swap');
+
+:root {
+    --cor_primaria: #5300C8;
+    --cor_secundaria: #03318C;
+    --fonte_game: "Press Start 2P", system-ui;
+    --fonte_IBM: "IBM Plex Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte_IBM);
+}
+
+header {
+    background-color: var(--cor_primaria);
+    padding-block: 20px;
+    text-align: center;
+
+    & > img {
+        max-width: 374px;
+        width: 100%;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 70px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--fonte_game);
+}
+
+#produto {
+    width: 60%;
+    padding: 40px;
+    text-align: center;
+}
+
+#pesquisa {
+    width: 286px;
+    max-width: 100%;
+    margin-block: 20px;
+    outline: none;
+    font-size: 16px;
+    padding: 7px 14px;
+    border-radius: 30px;
+    border: 3px solid var(--cor_primaria);
+    font-weight: 600;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    max-height: 910px;
+    overflow: auto;
+}
+
+.linha {
+    display: flex;
+    flex-shrink: 0;
+    width: fit-content;
+    max-width: 100%;
+    column-gap: 10px;
+    padding: 7px;
+    overflow: auto;
+}
+
+.card {
+    flex-shrink: 0;
+    background-color: var(--cor_primaria);
+    width: 195px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: -5px 6px 3px rgba(0, 0, 0, 0.25);
+
+    & > img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    & > .card--info {
+        margin-top: 10px;
+        text-align: start;
+    }
+
+    & .card--value {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        font-weight: 700;
+
+        & > img {
+            cursor: pointer;
+        }
+    }
+}
+
+#formulario {
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form > input {
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid var(--cor_secundaria);
+    padding: 14px;
+    outline: none;
+    color: var(--cor_secundaria);
+    font-weight: 600;
+
+    &::placeholder {
+        color: var(--cor_secundaria);
+        font-weight: 600;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+#botoes {
+    display: flex;
+    gap: 13px;
+    
+    & > button {
+        height: 55px;
+        width: 50%;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    & > #guardar {
+        background-color: var(--cor_secundaria);
+        color: white;
+
+        &:active {
+            filter: brightness(.7);;
+        }
+    }
+
+    & > #limpar {
+        background-color: white;
+        color: var(--cor_secundaria);
+        border: 3px solid var(--cor_secundaria);
+
+        &:active {
+            filter: brightness(.7);;
+        }
+    }
+}
+
+form > p {
+    color: red;
+}
+
+footer {
+    background-color: var(--cor_primaria);
+    padding: 64px;
+    text-align: center;
+    color: white;
+
+    & > img {
+        max-width: 374px;
+        width: 100%;
+    }
+
+    & span {
+        display: block;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-inline: 0;
+    }
+
+    #formulario {
+        width: 100%;
+        max-width: 670px;
+    }
+    
+    #produto {
+        width: 100%;
+    }
+}

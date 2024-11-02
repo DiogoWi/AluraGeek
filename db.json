@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Stormtrooper",
+      "preco": 20,
+      "imagem": "imagens/stormtrooper.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Game Boy Classic",
+      "preco": 60.5,
+      "imagem": "imagens/gameboy_classic.jpg"
+    },
+    {
+      "nome": "Jogo do Homem Aranha",
+      "preco": 100,
+      "imagem": "https://m.media-amazon.com/images/I/81GMT75DPCL._AC_UF1000,1000_QL80_.jpg",
+      "id": 3
+    }
+  ]
+}
