@@ -2,7 +2,7 @@
 
 Este é o projeto AluraGeek, desenvolvido para explorar o uso de funções assíncronas para realizar operações em uma API utilizando o json-server. Com este projeto, é possível criar, ler e deletar.
 
-![AluraGeek](images/README/AluraGeek.jpg)
+![AluraGeek](imagens/README/AluraGeek.jpg)
 
 ## Funcionalidades
 O projeto AluraGeek implementa operações básicas de CRUD para gerenciamento de dados, possibilitando as seguintes funcionalidades:
